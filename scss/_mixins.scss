@@ -1,0 +1,32 @@
+@mixin dis-col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
+@mixin dis-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin dis-wrap(
+    $row: 2vh,
+    $column: 2vh
+){
+    row-gap: $row;
+    column-gap: $column;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin bg-img (
+    $url,
+    $height: 40vh,
+    $size : cover
+){
+    background-image: url($url);
+    background-repeat: none;
+    background-position: center;
+    background-size: $size;
+    height: $height;    
+}
