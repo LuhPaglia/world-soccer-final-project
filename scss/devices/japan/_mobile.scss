@@ -1,0 +1,232 @@
+@media(min-width:200px){
+    .title-japan {
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Poppins:ital';
+        }
+        text-align: center;
+    }
+
+    .jp-head {
+        @include bg-img("../img/japan/cover-01.jpg",60vh);
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+
+            font-family: 'Poppins:ital';
+            padding: 5%;
+            border-radius: 20px;
+            color: $color-j01;
+            background-color: $color-j02;
+            width: 80%;
+            text-align: center;
+        }
+
+        nav {
+            @include dis-row;
+            width: 100%;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+
+            > ul {
+                display:none;
+            }
+        }
+
+        details {
+            text-align: right;
+            width: 50%;
+
+            ul {
+                padding-top: 20%;
+            }
+            li {
+                width: 100%;
+                list-style: none;
+            }
+            a {
+                width: 100%;
+                color: $color-j01;
+                background-color: $color-j02;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: left;
+                padding: 0 5%;
+                border-radius: 3px;
+            }
+        } 
+
+        summary {
+            color: $color-j01;
+            list-style: none;
+            position: fixed;
+            right: 0;
+        }
+        i {
+            padding: 2%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5vh;
+            width: 5vh;
+            border-radius: 10px;
+            color: $color-j01;
+            background-color: $color-j02;
+        }
+    }
+
+    // Main
+    .jp-main {
+        @include dis-col;
+        align-items: center;
+
+        .card-text {
+            display: none;
+        }
+
+        .card-img-overlay {
+            @include dis-col;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-img {
+            height: 20vh;
+            width: 20vh;
+            object-fit: cover;
+        }
+    }
+        
+        
+    // league
+    .league-j {
+        @include dis-col;
+        align-items: center;
+        width: 90%;
+        > section {
+            @include dis-col;
+            align-items: center;
+        }
+        figure {
+            text-align: center
+        }
+
+        img {
+            height: 30vh;
+            width: 30vh;
+        }
+
+        h3 {
+            text-transform: capitalize
+        }
+    }
+
+
+    // bset players
+    .b-player-j {
+        background-color: $color-j03;
+        @include dis-col;
+        align-items: center;
+
+        > article,
+        > section {
+            width: 95%;
+        }
+    }
+
+    .b-player-card {
+        @include dis-col;
+        align-items: center;
+
+        figure {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        figcaption {
+            width: 100%;
+        }
+
+        ul {
+            @include dis-col;
+            row-gap: 0;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            list-style: none;
+        }
+
+        img {
+            object-fit: cover;
+            height: 40vh;
+            width: 40vh;
+            border-radius: 20px
+        }
+
+        h6 {
+            color: #FFF;
+        }
+    }
+
+    // stars
+    .stars-j {
+        @include dis-col;
+        > section {
+            @include dis-wrap(1vh,1vh);
+            justify-content: center;
+        } 
+    }
+
+    // n-team
+    .n-team-j {
+        background-color: $color-j03;
+        @include dis-col;
+        align-items: center;
+
+        > section,
+        > article {
+            width: 95%;
+        }
+        img {
+            height: 40vh;
+            width: 40vh;
+            object-fit: cover;
+        }
+
+        >section {
+            @include dis-col;
+            align-items: center;        
+        }
+
+        figure {
+            display: flex;
+            align-items: center; 
+        }
+
+        th, td {
+            border:  1px solid black;
+            font-size: 14px;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: gainsboro;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: white;
+        }
+        thead {
+            background-color: gainsboro;
+        }
+    }
+}
