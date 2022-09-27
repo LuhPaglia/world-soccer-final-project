@@ -35,16 +35,16 @@
     .leagues, .stars,.best-league{
         > section{
             @include dis-row;
-            column-gap: 2vh;
+            column-gap: 3vh;
         }
     }
 
     .leagues{
         figure{
-            width: 35%;
+            width: 30%;
             img{
-                width: 30vh;
-                height: 10vh;
+                width: 15vh;
+                height: 15vh;
             }
         }        
     }
