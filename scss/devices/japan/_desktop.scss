@@ -1,3 +1,121 @@
 @media(min-width:1000px){
+    .jp-head {
 
+        h1 {
+            width: 50%;
+        }
+    }  
+    
+    .jp-main {
+        .card-img {
+            height: 20vh;
+            width: 100%;
+        }
+        .card {
+            width: 14%
+        }
+
+        .card:hover{
+            transform: perspective(1000px) translateZ(500px);
+            z-index: 10;
+        }
+
+        .card-text {
+            display: none;
+        }
+    }
+
+    .league-j {
+
+        > article,
+        > section {
+            width: 70%;
+        }
+        figure  {
+            column-gap: 0;
+        }
+
+        img {
+            width: 30%;
+            border-radius: 20px;
+        }
+
+        figcaption {
+            flex-direction: row;
+            width: 70%;
+        }
+
+        h3,p {
+            width: 50%;
+        } 
+
+        h3 {
+            align-self: center;
+        }
+    }
+
+    .title-japan {
+        > p {
+            width: 100%;
+        }
+    }
+
+    .b-player-j {
+        > article,
+        > section {
+            width: 70%;
+        }
+    }
+
+    .b-player-card {
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        align-items: flex-start;
+
+        img {
+            height: 40vh;
+        }  
+    }
+
+    .stars-j{
+        @include dis-col;
+        justify-content: center;
+        align-items: center;
+
+        > article,
+        > section {
+            width: 70%;
+        }
+    }
+    .stars-card-j {
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        align-items: flex-start;         
+    }
+
+    // n-team
+    .n-team-j {
+        > section,
+        > article {
+            width: 70%;
+        }
+    }
+
+    .n-team-section{
+        @include dis-wrap(10vh,4vh);
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        > article {
+            width: 30%;
+        }
+        th, td {
+            font-size: 12px;
+            padding: 0 1%;
+        }
+        img {
+            height: 25vh;
+        }        
+    }    
 }

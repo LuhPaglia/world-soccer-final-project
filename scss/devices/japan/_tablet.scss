@@ -1,62 +1,80 @@
 @media(min-width:600px) {
-    .jp-head {
-        nav {
+    .nav-j {
+        details {
+            display:none;
+        }
 
-            details {
-                display:none;
-            }
+        > ul {
+            display: flex;
+            justify-content: center;
+            background-color: $color-j02;
+            width: 60%;
+            padding: 0;
+            border-radius: 3px;
+        }
 
-            > ul {
-                display: flex;
-                justify-content: center;
-                background-color: $color-j02;
-                width: 60%;
-                padding: 0;
-                border-radius: 3px;
-            }
-
-            li {
-                display: flex;
-                width: 100%;
-                list-style: none;
-            }
-            a {
-                width: 100%;
-                color: $color-j01;
-                text-transform: capitalize;
-                text-decoration: none;
-                text-align: center;
-            }
+        li {
+            display: flex;
+            width: 100%;
+            list-style: none;
+        }
+        a {
+            width: 100%;
+            color: $color-j01;
+            text-transform: capitalize;
+            text-decoration: none;
+            text-align: center;
         }
     }
-
+   
     .jp-main {
         .card-text {
             display: flex;
         }
         .card-img {
-            height: 40vh;
-            width: 40vh;
+            height: 50vh;
+            width: 100%;
+        }
+        .card {
+            width: 45%
         }
     }
 
+    .league-j {
+        figure {
+            display: flex;
+            column-gap: 2vh;
+        }
+        img,figcaption {
+            width: 50%;
+            height: 50vh;
+            @include dis-col;
+            align-items: center;
+            justify-content: center
+        }
+    }
 
     // bset players
     .b-player-card {
-        @include dis-wrap(4vh,8vh);
+        @include dis-wrap(4vh,4vh);
         flex-direction: row;
         justify-content: center;
 
         > article {
             width: 45%;
-            @include dis-col;
-            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         figure {
             display: flex;
             align-items: center;
-            justify-content: center;
         }
+        img {
+            height: 80vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        
     }
 
     // stars
@@ -75,32 +93,27 @@
         > article {
             width: 95%;
         }
+    }
 
-        >section {
-            @include dis-wrap(5vh,5vh);
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
+    .n-team-section {
+        @include dis-wrap(10vh,4vh);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
 
-            > article {
-                width: 45%;
-                @include dis-col;
-                align-items: center;
-            }        
+        > article {
+            width: 45%;
+            @include dis-col;
+            align-items: center;
         }
-
         th, td {
-            font-size: 5%;
+            font-size: 12px;
             padding: 0 1%;
         }
-        table{
-            width: 50vh;
-        }
-
+    
         img {
-            height: 15vh;
-            width: 20vh;
-        }
-
+            height: 40vh;
+        }        
     }
 }
