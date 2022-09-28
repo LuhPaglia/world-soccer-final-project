@@ -4,18 +4,7 @@
         @include dis-col;
         background-color: whitesmoke;
         border-radius: 15px;
-    }
-
-    
-
-    h2 {
-        font-size: 26px;
-        font-weight: 500;
-    }
-
-    h3 {
-        font-size: 23px;
-        font-weight: 500;
+        align-items: center;
     }
 
     body {
@@ -60,12 +49,33 @@
 
     h1 {
         font-size: 35px;
+        letter-spacing: 0.8px;
         font-weight: 600;
-        padding-bottom: 10vh;
+        padding-bottom: 3vh;
         text-decoration-line: underline;
+        color: #80ced6;
     }
+}
 
+.pborder {
+    border-bottom: 1px solid black;
+    padding-bottom: 3vh
+}
 
+.about,
+.history {
+    p {
+        font-style: italic;
+    }
+}
+
+.league23,
+.leaguestats,
+.about,
+.history {
+    h2 {
+        @include h2england
+    }
 }
 
 .about,
@@ -75,17 +85,63 @@
     text-align: center;
 }
 
-.winners {
+
+.leaguestats {
+    
+    width: 85%;
+    h2 {
+        @include h2england;
+    }
+
+    h3 {
+        color: #80ced6;
+        font-size: 22px;
+        padding-bottom: 2vh;
+    }
+
     img {
         width: 100%;
+        border-radius: 11px;
+    }
+}
+
+.league23 {
+    h2 {
+        padding-bottom: 2vh;
+    }
+}
+
+#winners {
+
+    > article {
+        h2 {
+            @include h2england;
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 15px;
     }
 
     ul > li {
         list-style-type: none;
+        text-align: left;
     }
+
+    time {
+        color: gray;
+        padding-right: 1vh;
+    }
+    
 }
 
 footer {
+    padding-top: 3vh;
     @include dis-col;
     align-items: center;
+    width: 90%;
+
+    a {
+        text-decoration: none;
+    }
 }
