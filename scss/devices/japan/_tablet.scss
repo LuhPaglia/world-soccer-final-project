@@ -2,7 +2,7 @@
 
     // nav
     .nav-j {
-
+        padding: 3px;
         details {
             display:none;
         }
@@ -27,7 +27,6 @@
             align-items: center;
         }
         a {
-            padding: 1vh 0 1vh;
             height: 100%;
             width: 100%;
             color: $color-j01;
@@ -56,14 +55,15 @@
     .league-j {
         figure {
             display: flex;
-            column-gap: 2vh;
+            column-gap: 5vh;
         }
         img,figcaption {
             width: 50%;
-            height: 50vh;
+            height: 60vh;
             @include dis-col;
             align-items: center;
-            justify-content: center
+            justify-content: center;
+            column-gap: 5vh;
         }
     }
 
@@ -83,7 +83,7 @@
             align-items: center;
         }
         img {
-            height: 80vh;
+            height: 40vh;
             width: 100%;
             object-fit: cover;
         }

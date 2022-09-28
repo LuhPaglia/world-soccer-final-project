@@ -20,7 +20,7 @@
 
         h1 {
             font-family: 'Poppins:ital';
-            padding: 5%;
+            padding: 4%;
             border-radius: 20px;
             color: $color-j01;
             background-color: $color-j02;
@@ -125,6 +125,7 @@
         > section {
             @include dis-col;
             align-items: center;
+            justify-content: center;
         }
         figure {
             text-align: center
@@ -140,7 +141,6 @@
             text-transform: capitalize
         }
     }
-
 
     // bset players
     .b-player-j {
@@ -253,8 +253,6 @@
         }
     }
 
-    
-
     .footer-j {
         text-align: center;
         padding: 5%;
@@ -263,8 +261,15 @@
             text-transform: capitalize;
         }
 
+        ul {
+            padding: 0;
+        }
         li {
             list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: dimgray;
         }
     }
 }
