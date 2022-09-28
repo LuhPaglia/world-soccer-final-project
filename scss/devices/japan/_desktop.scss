@@ -1,30 +1,58 @@
 @media(min-width:1000px){
+
+    // header
     .jp-head {
 
         h1 {
-            width: 50%;
+            width: 40%;
         }
     }  
     
+    // main
     .jp-main {
         .card-img {
             height: 20vh;
             width: 100%;
         }
         .card {
-            width: 14%
+            width: 13%;
         }
 
-        .card:hover{
-            transform: perspective(1000px) translateZ(500px);
-            z-index: 10;
+        .card-title {
+            z-index: 2;
+            background-color: $color-j02;
+            color: black;
+            border-radius: 5px;
         }
 
         .card-text {
             display: none;
+            border-radius: 5px;
+            background-color: $color-j02;
+            color: black;
+            font-size: 12px;
+            line-height: 1;
+            margin: 0;
+            font-size: 9px;
+        }
+
+        .card:hover {
+            transform: perspective(1000px) translateZ(500px);
+            z-index: 3;
+            cursor: pointer;
+            transition: all .5s
+        }
+        .card:hover .card-text {
+            display: flex;
+            z-index: 3;
+            transition: all .5s;
+        }
+        .list-group-flush {
+            display: none;
         }
     }
 
+    // league
     .league-j {
 
         > article,
@@ -54,12 +82,14 @@
         }
     }
 
+    // title
     .title-japan {
         > p {
             width: 100%;
         }
     }
 
+    // best
     .b-player-j {
         > article,
         > section {
@@ -77,6 +107,7 @@
         }  
     }
 
+    // stars
     .stars-j{
         @include dis-col;
         justify-content: center;
