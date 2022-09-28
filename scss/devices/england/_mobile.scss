@@ -78,6 +78,10 @@
     }
 }
 
+#h2league {
+    @include h2england;
+}
+
 .about,
 .leaguestats,
 .history {
