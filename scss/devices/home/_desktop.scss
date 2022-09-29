@@ -43,6 +43,21 @@
         }
     }
 
+    .best-league{
+        .card {
+            height: fit-content;
+            display: flex;
+            align-items: flex-start;
+        } 
+
+        .card:hover {
+            transform: perspective(1000px) translateZ(300px);
+            z-index: 1;
+            cursor: pointer;
+            transition: all .5s
+        }
+    }
+
     .world-champion{
         > section {
             @include dis-row;
@@ -56,16 +71,18 @@
                 row-gap: 2vh;
                 width: 55%;
                 text-align: center;
-                h3{
-                    font-size: 26px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: dimgray;
-                }
-                p{
-                    text-align: justify;
-                }
+
             }
+        }
+
+        h3{
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: dimgray;
+        }
+        p{
+            text-align: justify;
         }
     }
 }
