@@ -21,7 +21,7 @@
         li{
             display: flex;
             a{
-                color: black;
+                color: whitesmoke;
                 text-decoration: none;
                 text-transform: uppercase;
             }
@@ -30,9 +30,8 @@
     
     main{
         @include dis-col;
+        width: 95%;
         row-gap: 10vh;
-        padding: 5%;
-    
         > section {
             @include dis-col;
             align-items: center;

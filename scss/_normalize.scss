@@ -1,6 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+body{
+    @include dis-col;
+    align-items: center;
     background-color: whitesmoke;
 }
 
@@ -8,6 +13,8 @@ header{
     @include dis-row;
     width: 100%;
     padding: 5%;
+    background-color: dimgray;
+    color: whitesmoke;
     > aside{
         @include dis-row;
         align-items: center;
@@ -15,3 +22,4 @@ header{
         font-size: 36px;
     }
 }
+
