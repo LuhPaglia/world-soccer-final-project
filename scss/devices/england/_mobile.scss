@@ -78,7 +78,8 @@
     }
 }
 
-#h2league {
+#h2league,
+#h2leagues {
     @include h2england;
 }
 
@@ -87,6 +88,11 @@
 .history {
     @include dis-col;
     text-align: center;
+}
+
+.league23,
+.league22 {
+    width: 100%;
 }
 
 
@@ -104,22 +110,25 @@
     }
 
     img {
-        width: 100%;
+        width: 25vh;
+        height: 15vh;
         border-radius: 11px;
     }
+
+    > article {
+        justify-content: center
+    }
+
 }
 
-.league23 {
-    h2 {
-        padding-bottom: 2vh;
-    }
-}
+
 
 #winners {
 
     > article {
         h2 {
             @include h2england;
+            letter-spacing: 0px;
         }
     }
     img {

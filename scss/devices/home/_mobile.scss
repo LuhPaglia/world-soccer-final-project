@@ -1,0 +1,125 @@
+@media(min-width: 200px){
+    header{
+        @include dis-col;
+        > nav > ul{
+            display: none;
+        }
+    }
+
+    details{
+        text-align: center;
+        font-size: 36px;
+        summary::-webkit-details-marker {
+            display:none;
+        }
+        ul{
+            padding: 5%;
+            @include dis-row;
+            font-size: 18px;
+            justify-content: space-around;
+        }
+        li{
+            display: flex;
+            a{
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    main{
+        @include dis-col;
+        row-gap: 10vh;
+        padding: 5%;
+    
+        > section {
+            @include dis-col;
+            align-items: center;
+            row-gap: 3vh;
+            > article:first-child{
+                @include dis-col;
+                row-gap: 3vh;
+                text-align: center;
+                h2{
+                    color: dimgray;
+                    font-size: 36px;
+                    letter-spacing: 1vh;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+                p{
+                    line-height: 2;
+                }
+            }
+        }
+    }
+    
+    .carousel{
+        height: 30vh;
+        img{
+            height: 30vh;
+        }
+    }
+    
+    .leagues{
+        > section{
+            @include dis-col;
+            row-gap: 5vh;
+        }
+        figure{
+            @include dis-col;
+            row-gap: 5vh;
+            align-items: center;
+            text-align: center;
+            border: 2px solid dimgray;
+            padding: 5%;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    
+    .stars,.best-league{
+        > section{
+            @include dis-col;
+            row-gap: 3vh;
+            text-align: center;
+        }
+    }
+    
+    .home-video{
+        video{
+            width: 100%;
+        }
+    }
+    
+    .world-champion{
+        > section {
+            @include dis-col;
+            row-gap: 7vh;
+            > aside{
+                background-image: url("../../../img/home/france-world-cup.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 30vh;
+            }
+    
+            > article{
+                @include dis-col;
+                row-gap: 2vh;
+                text-align: center;
+                h3{
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: dimgray;
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
