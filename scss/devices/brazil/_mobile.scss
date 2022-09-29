@@ -61,6 +61,10 @@
         }
     }
 
+    .brazil-league{
+        @include dis-col;
+    }
+
     .brazil-table{
         width: 100%;
     }
