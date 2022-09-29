@@ -2,6 +2,7 @@
     header{
         @include dis-row;
         column-gap: 5vh;
+        padding: 2%;
         > nav {
             width: 45%;
             > ul{
@@ -18,7 +19,7 @@
 
             a{
                 text-decoration: none;
-                color: black;
+                color: whitesmoke;
                 text-align: center;
                 font-size: 20px;
             }
@@ -26,10 +27,6 @@
     }
     details{
         display: none;
-    }
-
-    main{
-        padding: 2%;
     }
 
     .leagues, .stars,.best-league{
