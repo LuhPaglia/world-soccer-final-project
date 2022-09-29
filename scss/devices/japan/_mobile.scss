@@ -207,7 +207,7 @@
     }
 
     .n-team-section {
-        padding: 5vh 0 5vh;
+        @include dis-col;
         img {
             width: 100%;
             object-fit: cover;
