@@ -3,6 +3,7 @@
         nav{
             ul{
                 row-gap: 2vh;
+                justify-content: space-around;
             }
             li{
                 width: 12vh;
@@ -10,5 +11,13 @@
                 @include dis-row;
             }
         }
+    }
+    .brazil-league{
+        figure{
+            img{
+                width: 20vh;
+            }
+        }
+
     }
 }
