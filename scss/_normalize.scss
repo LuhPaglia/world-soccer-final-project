@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     @include dis-col;
     align-items: center;
@@ -20,6 +24,18 @@ header{
         align-items: center;
         column-gap: 2vh;
         font-size: 36px;
+    }
+}
+
+footer{
+    background-color: dimgray;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    color: whitesmoke;
+    a{
+        text-decoration: underline;
+        color: whitesmoke;  
     }
 }
 
