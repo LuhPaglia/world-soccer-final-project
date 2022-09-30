@@ -1,0 +1,70 @@
+@media (min-width: 1000px){
+    .brazil-table{
+        width: 60%;
+    }
+
+    main{
+        nav{
+            width: 70%;
+            li{
+                width: 20vh;
+                height: 10vh;
+            }
+            a:hover{
+                color: gold;
+            }
+        }
+    }
+    .brazil-history{
+        width: 100%;
+        > section{
+            @include dis-row;
+            column-gap: 3vh;
+        }
+        figure{
+            @include dis-col;
+            row-gap: 1vh;
+
+            text-align: center;
+            font-weight: 600;
+            img{
+                width: 35vh;
+                height: 35vh;
+            }
+        }
+    }
+    .brazil-team{
+        width: 85%;
+        section{
+            @include dis-row;
+            column-gap: 0vh;
+        }        
+        aside{
+            width: 50%;
+            height: 40vh;
+        }
+        p{
+            width: 50%;
+            height: 100%;
+            text-align: center;
+        }
+    }
+
+    .brazil-league{
+        width: 70%;
+        figure{
+            img{
+                width: 40vh;
+            }
+        }
+        section > article{
+            @include dis-row;
+            > figure{
+                width: 50%;
+            }
+            > aside{
+                width: 50%;
+            }
+        }
+    }
+}

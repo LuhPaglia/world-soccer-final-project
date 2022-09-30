@@ -1,0 +1,137 @@
+@media(min-width:600px) {
+
+    // nav
+    .nav-j {
+        padding: 3px;
+        details {
+            display:none;
+        }
+
+        > ul {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            width: 30%;
+            height: 100%;
+            padding: 0;
+            border-radius: 3px;
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            background-color: transparent;
+            align-items: center;
+        }
+        a {
+            height: 100%;
+            width: 100%;
+            color: $color-j01;
+            text-transform: capitalize;
+            text-decoration: none;
+            text-align: center;
+            background-color: transparent;
+        }
+    }
+
+
+    // league
+    .league-j {
+        > section {
+            @include dis-col;
+            row-gap: 7vh;
+        }
+        figure {
+            flex-direction: row;
+            column-gap: 5vh;
+        }
+        figure:nth-child(2){
+            flex-direction: row-reverse;
+        }
+
+        img,figcaption {
+            width: 50%;
+            height: 60vh;
+            @include dis-col;
+            align-items: center;
+            justify-content: center;
+            column-gap: 5vh;
+        }
+        h3 {
+            font-size: 36px;
+            align-self: center;
+        }
+    }
+
+    // bset players
+    .b-player-card {
+        @include dis-wrap(4vh,4vh);
+        flex-direction: row;
+        justify-content: center;
+
+        > article {
+            width: 45%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        figure {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            height: 40vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+    }
+
+    // stars
+    .stars-j {
+        > section {
+            @include dis-wrap(3vh,3vh);
+            flex-direction: row;
+            justify-content: center;
+        } 
+
+        .card-img {
+            height: 50vh;
+            width: 100%;
+        }
+        .card {
+            width: 45%;   
+        }
+    }
+
+    // n-team
+    .n-team-j {
+        @include dis-col;
+        align-items: center;
+        width: 95%;
+    }
+
+    .n-team-section {
+        @include dis-wrap(10vh,4vh);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+
+        > article {
+            width: 45%;
+            @include dis-col;
+            align-items: center;
+        }
+        th, td {
+            font-size: 12px;
+            padding: 0 1%;
+        }
+    
+        img {
+            height: 40vh;
+        }        
+    }
+}

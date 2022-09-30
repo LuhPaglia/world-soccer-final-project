@@ -1,4 +1,96 @@
 @media (min-width: 200px){
+
+    main{
+        > h1{
+            padding-top: 2%;
+            font-size: 48px;
+            color: dimgray;
+            letter-spacing: 1.5vh;
+            text-align: center;
+            width: 100%;
+        }
+        nav{
+            ul{
+                @include dis-row;
+                row-gap: 3vh;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            li{
+                width: 18vh;
+                height: 10vh;
+                @include dis-row;
+            }
+            a{
+                width: 100%;
+                height: 100%;
+                @include dis-row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: dimgray;
+                color: whitesmoke;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .brazil-history{
+        > section{
+            @include dis-col;
+            row-gap: 3vh;
+        }
+        figure{
+            @include dis-col;
+            row-gap: 1vh;
+
+            text-align: center;
+            font-weight: 600;
+            img{
+                width: 40vh;
+            }
+        }
+    }
+    .brazil-team{
+        section{
+            @include dis-col;
+            row-gap: 3vh;
+        }        
+        aside{
+            background-image: url("../../../img/brazil/2022-brazil.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:contain;
+            height: 30vh;
+        }
+        p{
+            text-align: center;
+        }
+    }
+
+    .brazil-league{
+        @include dis-col;
+        align-items: center;
+        article{
+            @include dis-col;
+            align-items: center;
+        }
+        aside{
+            @include dis-col;
+            align-items: center;
+            text-align: justify;
+        }
+        figure{
+            @include dis-col;
+            align-items: center;
+            img{
+                width: 30vh;
+            }
+        }
+
+    }
+
     .brazil-table{
         width: 100%;
     }
