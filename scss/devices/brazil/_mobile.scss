@@ -9,7 +9,7 @@
                 flex-wrap: wrap;
             }
             li{
-                width: 20vh;
+                width: 18vh;
                 height: 10vh;
                 @include dis-row;
             }
@@ -40,7 +40,7 @@
             text-align: center;
             font-weight: 600;
             img{
-                width: 50vh;
+                width: 40vh;
             }
         }
     }
@@ -63,6 +63,24 @@
 
     .brazil-league{
         @include dis-col;
+        align-items: center;
+        article{
+            @include dis-col;
+            align-items: center;
+        }
+        aside{
+            @include dis-col;
+            align-items: center;
+            text-align: justify;
+        }
+        figure{
+            @include dis-col;
+            align-items: center;
+            img{
+                width: 30vh;
+            }
+        }
+
     }
 
     .brazil-table{

@@ -1,0 +1,14 @@
+@media (min-width: 600px){
+    main{
+        nav{
+            ul{
+                row-gap: 2vh;
+            }
+            li{
+                width: 12vh;
+                height: 5vh;
+                @include dis-row;
+            }
+        }
+    }
+}
