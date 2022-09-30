@@ -28,11 +28,16 @@
         display: none;
     }
 
-    .name {
-        h1 {
-            font-size: 44px;
+        img {
+            height: 50vh;
+            width: 125vh;
         }
     }
+
+    // .league22,
+    // .league23 {
+    //     width: 50%;
+    // }
 
     .history {
         p {
@@ -48,10 +53,15 @@
     }
 
     #winners {
+
+        img {
+            height: 72vh;
+            width: 82vh;
+        }
+
         time {
             padding-right: 5vh;
         }
-    }
-
-
 }
+
+
